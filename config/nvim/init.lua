@@ -9,6 +9,18 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+if vim.g.neovide then
+	vim.o.guifont = "0xProto Nerd Font:h10"
+	vim.g.neovide_padding_top = 0
+	vim.g.neovide_padding_bottom = 0
+	vim.g.neovide_padding_right = 0
+	vim.g.neovide_padding_left = 0
+	vim.g.neovide_title_background_color = string.format("%x",vim.api.nvim_get_hl(0, {id=vim.api.nvim_get_hl_id_by_name("Normal")}).bg)
+	vim.g.neovide_corner_preference = "round"
+	vim.g.neovide_theme = 'dark'
+	vim.g.neovide_input_ime = true	
+end
+
 require("lazy").setup({
 	{
 		"nvim-neo-tree/neo-tree.nvim",
