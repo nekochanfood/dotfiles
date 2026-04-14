@@ -19,3 +19,5 @@ link ".tmux.conf"      ".tmux.conf"
 link "config/nvim"     ".config/nvim"
 
 echo "Done!"
+echo ""
+echo "Note: For Windows, use install.ps1 instead (neovim only)."
