@@ -1,0 +1,7 @@
+# Neovim
+config/nvim/lazy-lock.json
+
+# General
+.DS_Store
+*.swp
+*.swo
