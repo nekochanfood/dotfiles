@@ -1,6 +1,16 @@
 # Neovim
 config/nvim/lazy-lock.json
 
+# Machine-specific / secrets (never commit these)
+.zshrc.local
+.env
+.env.*
+*.pem
+*.key
+*_rsa
+*_ed25519
+id_*
+
 # General
 .DS_Store
 *.swp

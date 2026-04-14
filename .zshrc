@@ -113,3 +113,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH=$(echo $PATH | tr ':' '\n' | grep -v /mnt/c | tr '\n' ':')
+
+# Machine-specific config and secrets (not tracked by git)
+[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
